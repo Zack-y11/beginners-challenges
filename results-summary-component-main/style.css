@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-.result {
+.result__score-container{
     width: 300px;
     height: 400px;
     background:linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -22,18 +22,25 @@
     align-items: center;
 
 }
-.result__tittle{
+.result__score-container__tittle{
     padding-top: 8%;
     padding-bottom: 8%;
 }
-.result__tittle--white{
+.result__summary__title{
     padding-left: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
-.result__white{
+.result__summary{
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
     background: aliceblue;
     color:  hsl(224, 30%, 27%);
-    text-align: left;
     align-items: start;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 .result__circle{
     width: 160px;
@@ -49,14 +56,14 @@
 .result__circle--minus{
     color: hsl(241, 100%, 89%);
 }
-.result__h1{
+.result__score-container__result-title{
     padding: 4%;
 }
-.result__para{
+.result__score-container__message{
     padding: 0px 35px 0px 35px;
     font-weight:500;
 }
-.result__information{
+.result__summary__item-information{
     background: hsl(221, 100%, 96%);
     width: 85%;
     height: 10%;
@@ -65,9 +72,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
     
 }
-.result__details{
+.result__summary__item-information__details{
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -78,6 +86,18 @@
 .result--orange{color: hsl(39, 100%, 56%);}
 .result--green{color: hsl(166, 100%, 37%);}
 .result--blue{color: hsl(234, 85%, 45%);}
+.red {
+    background: hsl(0, 100%, 92%);
+}
+.orange{
+    background: hsl(40, 80%, 92%);
+}
+.green{
+    background: hsl(166, 100%, 92%);
+}
+.blue{
+    background-color: hsl(234, 85%, 92%);
+}
 
 button{
     border: none;
@@ -100,4 +120,26 @@ button:hover{
     .container{
         flex-wrap: wrap;
     }
+    /* .result__score-container{
+        width: 220px;
+        height: 260px;
+    }
+    .result__circle{
+        padding-top: 5%;
+        width: 90px;
+        height: 120px;
+        background: linear-gradient(180deg,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    }
+    .result__circle--big{
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .result__circle--minus{
+        color: hsl(241, 100%, 89%);
+    }
+    .result__summary{
+        border-radius: 20px;
+        width: 220px;
+        height: 400px;
+    } */
 }
