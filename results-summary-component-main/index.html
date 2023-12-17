@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+		<title>Frontend Mentor | Results summary component</title>
 
-  <title>Frontend Mentor | Results summary component</title>
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+	<body>
+		<div class="container">
+			<div class="result">
+				<!-- result__score-container-->
+				<h2 class="result__tittle">Your Result</h2>
+				<!-- result__score-container__title -->
+				<div class="result__circle">
+					<!-- result__score-container__title -->
+					<span class="result__circle--big">76</span><br />
+					<span class="result__circle--minus">of 100</span>
+				</div>
+				<h1 class="result__h1">Great</h1>
+				<!-- result__score-container__result-title -->
+				<p class="result__para">
+					You scored higher than 65% of the people who have taken these tests.
+				</p>
+				<!-- result__score-container__message -->
+			</div>
+			<div class="result result__white">
+				<!-- result__summary -->
+				<h2 class="result__tittle--white">Summary</h2>
+				<!-- result__summary__title-->
+				<div class="result__information">
+					<!-- result__summary__item-information -->
+					<div class="result__details">
+						<!-- result__summary__item-information__details -->
+						<img src="./assets/images/icon-reaction.svg" alt="" />
+						<p class="result--red">Reaction</p>
+					</div>
+					<p>80 <span class="result--percentage"> /100</span></p>
+				</div>
+				<div class="result__information">
+					<!-- result__summary__item-information -->
+					<div class="result__details">
+						<!-- result__summary__item-information__details -->
+						<img src="./assets/images/icon-memory.svg" alt="" />
+						<p class="result--orange">Memory</p>
+					</div>
+					<p>92 <span class="result--percentage"> /100</span></p>
+				</div>
+				<div class="result__information">
+					<div class="result__details">
+						<img src="./assets/images/icon-verbal.svg" alt="" />
+						<p class="result--green">Verbal</p>
+					</div>
+					<p>61 <span class="result--percentage"> /100</span></p>
+				</div>
+				<div class="result__information">
+					<div class="result__details">
+						<img src="./assets/images/icon-visual.svg" alt="" />
+						<p class="result--blue">Visual</p>
+					</div>
+					<p>72 <span class="result--percentage">/ 100</span></p>
+				</div>
+				<button>Continue</button>
+			</div>
+		</div>
 
-<body>
-  <div class="container">
-    <div class="result">
-      <h2 class="result__tittle">Your Result</h2>
-      <div class="result__circle">
-        <span class="result__circle--big">76</span><br>
-        <span class="result__circle--minus">of 100</span>
-      </div>
-      <h1 class="result__h1">Great</h1>
-      <p class="result__para">You scored higher than 65% of the people who have taken these tests.
-      </p>
-    </div>
-    <div class="result result__white">
-      <h2 class="result__tittle--white">Summary</h2>
-      <div class="result__information">
-        <div class="result__details">
-          <img src="./assets/images/icon-reaction.svg" alt="">
-          <p class="result--red">Reaction</p>
-        </div>
-        <p>80 <span class="result--percentage"> /100</span></p>
-      </div>
-      <div class="result__information">
-        <div class="result__details">
-          <img src="./assets/images/icon-memory.svg" alt="">
-          <p class="result--orange">Memory</p>
-        </div>
-        <p>92 <span class="result--percentage"> /100</span></p>
-      </div>
-      <div class="result__information">
-        <div class="result__details">
-          <img src="./assets/images/icon-verbal.svg" alt="">
-          <p class="result--green">Verbal</p>
-        </div>
-        <p>61 <span class="result--percentage"> /100</span></p>
-      </div>
-      <div class="result__information">
-        <div class="result__details">
-          <img src="./assets/images/icon-visual.svg" alt="">
-          <p class="result--blue">Visual</p>
-        </div>
-        <p>72 <span class="result--percentage">/ 100</span></p>
-      </div>
-      <button>Continue</button>
-    </div>
-  </div>
-
-<!-- 
+		<!-- 
   Your Result
   76
   of 100
@@ -93,11 +109,12 @@
   72 / 100
 
   Continue -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Isaac N. Romero</a>.
-  </div>
-</body>
 
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Isaac N. Romero</a>.
+		</div>
+	</body>
 </html>
