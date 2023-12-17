@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result {
+    width: 300px;
+    height: 400px;
+    background:linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.result__tittle{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.result__tittle--white{
+    padding-left: 10%;
+}
+.result__white{
+    background: aliceblue;
+    color:  hsl(224, 30%, 27%);
+    text-align: left;
+    align-items: start;
+}
+.result__circle{
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(180deg,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    padding-top:10% ;
+}
+.result__circle--big{
+    font-size: 50px;
+    font-weight: 800;
+}
+.result__circle--minus{
+    color: hsl(241, 100%, 89%);
+}
+.result__h1{
+    padding: 4%;
+}
+.result__para{
+    padding: 0px 35px 0px 35px;
+    font-weight:500;
+}
+.result__information{
+    background: hsl(221, 100%, 96%);
+    width: 85%;
+    height: 10%;
+    margin: 8px auto 8px auto;
+    padding: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.result__details{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.result--percentage {color: hsl(241, 100%, 89%);}
+.result--red{color: hsl(0, 100%, 67%);}
+.result--orange{color: hsl(39, 100%, 56%);}
+.result--green{color: hsl(166, 100%, 37%);}
+.result--blue{color: hsl(234, 85%, 45%);}
+
+button{
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    height: 10%;
+    margin: 20px auto 10px auto;
+    font-weight: 700;
+    font-size: 18px;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* MEDIA QUERIES  */
+@media (max-width: 375px) {
+    .container{
+        flex-wrap: wrap;
+    }
+}
